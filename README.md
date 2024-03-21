@@ -5,6 +5,6 @@
 An example of English text tone detection with [Hugging Face](https://huggingface.co/) library.
 
 ## Contributors
-[![Contributors](https://contrib.rocks/image?repo=kcherenkovv/ml_fastapi_tests)](https://github.com/kcherenkov/ml_fastapi_tests/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=kcherenkovv/ml_fastapi_tests)](https://github.com/kcherenkovv/ml_fastapi_tests/graphs/contributors)
 
 Tests GitHub Actions
