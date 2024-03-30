@@ -26,7 +26,7 @@ def test_predict_negative():
     assert json_data['label'] == 'NEGATIVE'
 
 def test_translate():
-    response = client.post("/tranlslate/",
+    response = client.post("/translate/",
                           json={"text":"I love machine learning!"})
     assert response.status_code == 200
     assert response.json()["translated_text"] == "Я люблю машинное обучение!"
