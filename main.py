@@ -2,13 +2,12 @@ from fastapi import FastAPI, HTTPException
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 from pydantic import BaseModel
 
-#Добавим async версии для FastAPI, чтобы улучшить асинхронную обработку запросов.
-#Разделим создание экземпляров модели и токенизатора от основного потока выполнения, 
-#чтобы уменьшить время загрузки при старте сервера.
+# Добавим async версии для FastAPI, чтобы улучшить асинхронную обработку запросов.
+# Разделим создание экземпляров модели и токенизатора от основного потока выполнения,
+# чтобы уменьшить время загрузки при старте сервера.
 
 class Item(BaseModel):
     text: str
-
 
 
 app = FastAPI()
@@ -16,9 +15,6 @@ app = FastAPI()
 classifier = pipeline("sentiment-analysis")
 tokenizer = AutoTokenizer.from_pretrained("Helsinki-NLP/opus-mt-en-ru")
 model = AutoModelForSeq2SeqLM.from_pretrained("Helsinki-NLP/opus-mt-en-ru")
-
-
-
 
 
 @app.get("/", response_model=dict)
