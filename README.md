@@ -11,4 +11,4 @@ Tests GitHub Actions
 
 Tests GitHub Actions #2
 
-Meets PEP3 requirements
+Meets PEP3 requirements.
