@@ -10,3 +10,5 @@ An example of English text tone detection with [Hugging Face](https://huggingfac
 Tests GitHub Actions
 
 Tests GitHub Actions #2
+
+Meets PEP3 requirements
